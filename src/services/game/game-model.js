@@ -10,14 +10,14 @@ const Schema = mongoose.Schema;
 
 const cardSchema = new Schema({
   symbol: { type: String, required: true },
-  flipped: { type: Boolean, required: true, 'default': false },
+  // flipped: { type: Boolean, required: true, 'default': false },
 });
 
 const playerSchema = new Schema({
   userId: { type: Schema.Types.ObjectId, ref: 'user' },
   color: { type: String, required: false },
   name: { type: String, required: true },
-  pairs: [String]
+  points: [String]
 });
 
 const gameSchema = new Schema({

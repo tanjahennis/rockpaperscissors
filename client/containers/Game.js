@@ -8,6 +8,7 @@ import RaisedButton from 'material-ui/RaisedButton'
 import FlatButton from 'material-ui/FlatButton'
 import saveGame from '../actions/update-game'
 import Choice from '../components/choice'
+import Result from '../components/result'
 import './Game.sass'
 
 const PLAYER_COLORS = ['#0f0', '#00f']
@@ -61,6 +62,7 @@ class Game extends Component {
         { game.players.map((player) => player.name) + " " }
         <h1>Game goes here?</h1>
         <Choice />
+        <Result />
       </div>
     )
   }
