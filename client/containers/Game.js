@@ -7,7 +7,7 @@ import Paper from 'material-ui/Paper'
 import RaisedButton from 'material-ui/RaisedButton'
 import FlatButton from 'material-ui/FlatButton'
 import saveGame from '../actions/update-game'
-import Choice from '../components/choice'
+import Choice from '../components/Choice'
 import Result from '../components/result'
 import './Game.sass'
 

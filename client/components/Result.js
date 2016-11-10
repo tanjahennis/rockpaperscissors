@@ -4,6 +4,8 @@ import { Link } from 'react-router'
 import RaisedButton from 'material-ui/RaisedButton'
 import Choice from './Choice'
 import rock from '../actions/rock'
+import paper from '../actions/paper'
+import scissors from '../actions/scissors'
 
 class Result extends Component {
 
