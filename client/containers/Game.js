@@ -9,6 +9,7 @@ import FlatButton from 'material-ui/FlatButton'
 import saveGame from '../actions/update-game'
 import Choice from '../components/Choice'
 import Result from '../components/result'
+import GridListExampleSimple from './Gridlist'
 import './Game.sass'
 
 const PLAYER_COLORS = ['#0f0', '#00f']
@@ -60,9 +61,10 @@ class Game extends Component {
         <p>Is player: { this.isPlayer() ? 'Yes' : 'No' }</p>
         <p>Can join: { this.canJoin() ? 'Yes' : 'No' }</p>
         { game.players.map((player) => player.name) + " " }
-        <h1>Game goes here?</h1>
+        <h1>Let's play!</h1>
         <Choice />
         <Result />
+        <GridListExampleSimple />
       </div>
     )
   }

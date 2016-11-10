@@ -1,6 +1,6 @@
 import { SHOW_ROCK, HIDE_ROCK } from '../actions/rock'
 
-export default ( state = true, { type, payload } = {}) => {
+export default ( state = false, { type, payload } = {}) => {
   switch (type) {
     case SHOW_ROCK :
       return true

@@ -1,6 +1,6 @@
 import { SHOW_PAPER, HIDE_PAPER } from '../actions/paper'
 
-export default ( state = true, { type, payload } = {}) => {
+export default ( state = false, { type, payload } = {}) => {
   switch (type) {
     case SHOW_PAPER :
       return true
