@@ -7,8 +7,8 @@ import Paper from 'material-ui/Paper'
 import RaisedButton from 'material-ui/RaisedButton'
 import FlatButton from 'material-ui/FlatButton'
 import saveGame from '../actions/update-game'
+import Choice from '../components/choice'
 import './Game.sass'
-import GameModel from '../models/game-model'
 
 const PLAYER_COLORS = ['#0f0', '#00f']
 
@@ -58,19 +58,13 @@ class Game extends Component {
       <div className="game">
         <p>Is player: { this.isPlayer() ? 'Yes' : 'No' }</p>
         <p>Can join: { this.canJoin() ? 'Yes' : 'No' }</p>
-        { game.players.map((player) => player.name) }
-      </div>
-    )
-
-    return (
-      <div className="model">
-        <GameModel />
+        { game.players.map((player) => player.name) + " " }
+        <h1>Game goes here?</h1>
+        <Choice />
       </div>
     )
   }
 }
-
-
 
 Game.propTypes = {
   game: PropTypes.object.isRequired,
