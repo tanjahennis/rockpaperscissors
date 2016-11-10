@@ -7,7 +7,8 @@ import {
   pinkA200,
   pinkA400,
   grey900,
-  fullWhite
+  fullWhite,
+  amber500
 } from 'material-ui/styles/colors';
 
 import { fade } from 'material-ui/utils/colorManipulator';
@@ -16,7 +17,7 @@ export default {
   fontFamily: sansSerif,
   boxShadow: '1px -1px 5px rgba(0,0,0,0.3)',
   palette: {
-    primary1Color: red500,
+    primary1Color: amber500,
     primary2Color: cyan700,
     primary3Color: grey600,
     accent1Color: pinkA200,
@@ -36,7 +37,7 @@ export default {
     top: 0,
     left: 0,
     height: 50,
-    backgroundColor: red500,
+    backgroundColor: amber500,
     textColor: fullWhite,
   },
 };
